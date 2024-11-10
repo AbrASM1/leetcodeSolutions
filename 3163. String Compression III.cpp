@@ -4,7 +4,8 @@ public:
     string compressedString(string word) {
         string comp="";
         int i=0,temp=1;
-        while(i<word.size()&&((i+temp)<=word.size())){
+        int word_size=word.size();
+        while(i<word_size&&((i+temp)<=word_size)){
             if((word[i] != word[i+temp])||(temp==9)){
             
             
